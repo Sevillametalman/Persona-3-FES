@@ -1,0 +1,167 @@
+body{
+    padding: 15px;
+    background: url('../img/wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1.title {
+    color: black;
+    text-align:center;
+}
+
+#P3F-logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.container {
+    border: 10px solid rgb(11, 11, 70);
+    border-top-color: black;
+    border-bottom-color: black;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgb(70, 70, 206, 0.9);
+}
+
+.center-img-anchor{
+    text-align: center;
+}
+
+.navbar{
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(17, 17, 17, 0.9); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.navbar a{
+    color:rgba(255, 255, 255, 0.61);
+    font-size: 25px;
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: rgb(255, 255, 255);
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+.close{
+    margin-left: 50px;
+    text-decoration: none;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.open-menu{
+    position: absolute;
+    font-size: 36px;
+    margin-left: 10px;
+    color: rgb(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.open-menu:hover{
+    color:rgb(0,0,0);
+}
+
+.social-link {
+    box-sizing: border-box;
+    float: left;
+    border: 10px solid rgb(11, 11, 70);
+    border-right: none;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: transparent;
+    width: 20%;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.social-link::-webkit-scrollbar {
+    display: none;
+}
+
+.social-link button {
+    box-sizing: border-box;
+    display: block;
+    padding: 22px 16px; /*Para que sean 6 botones, deben ser 32px. Nota para cuando haga los guardianes del tártaro*/
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(245, 245, 245);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.social-link button:hover {
+    color:whitesmoke;
+    background-color: rgba(196, 0, 0, 0.5);
+}
+
+.social-link button.active {
+    font-weight: bold;
+    background-color: rgba(196, 0, 0, 0.9);
+}
+
+.slContent {
+    box-sizing: border-box;
+    float: left;
+    padding: 0px 12px;
+    padding-right: 0;
+    border: 10px solid rgb(11, 11, 70);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-color: black;
+    border-bottom-color: black;
+    width: 80%;
+    border-left: none;
+    height: 500px;
+    overflow-y: scroll;
+    background-color: rgb(70, 70, 206, 0.9);
+}
+
+.slContent::-webkit-scrollbar {
+    display: none;
+}
+
+.hr-smol{
+    width: 50%;
+    border-color: rgba(196, 0, 0, 0.9);
+}
+
+.rank-list li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
