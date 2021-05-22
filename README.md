@@ -11,3 +11,6 @@ La guía contiene 4 secciones:
 **Social Links** (Qué respuestas dar en ciertos eventos e interacciones con los diferentes Social Links del juego. Incluye promociones de rango, eventos espontáneos como reunirse los domingos, recuperarse del estado reverse y recuperarse del estado broken).
 
 **Pedidos de Elizabeth** (Descripción literal del pedido y una solución al mismo).
+
+## Edit (2021/05/21)
+Por lo visto hay una forma de llevar al máximo todos los social links y los stats en una partida (sin ng+), intentaré hacerlo en P3 y FES para posteriormente añadir esa sección. Pero primero terminaré todas las secciones y mi primer run del juego (Actualmente voy comenzando noviembre en FES)
