@@ -16,7 +16,7 @@ function openNavBarSelection() {
         document.getElementById("navbar").style.width = "250px"
         document.getElementById("main").style.marginLeft = "250px";
         document.getElementById('open-menu').style.display = 'none';
-    } else if (x) {
+    }else if(x){
         document.getElementById("navbar").style.width = "250px"
         document.getElementById('open-menu').style.display = 'none';
     }
@@ -30,33 +30,33 @@ function closeNavBar() {
 }
 
 //Mostrar el contenido del mes/social link/piso del tartaro correspondiente
-function showSocLinkContent(event, socialLink) {
+function showMesContent(event, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
-
+    
 
     // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("slContent");
+    tabcontent = document.getElementsByClassName("mescontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
     // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("sltab");
+    tablinks = document.getElementsByClassName("mestab");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace("active", "");
     }
 
     // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(socialLink).style.display = "block";
+    document.getElementById(cityName).style.display = "block";
     event.currentTarget.className += " active";
 
-    document.getElementById(socialLink).scrollTop = 0; //Ir al top del div de cada social link
+    document.getElementById(cityName).scrollTop = 0;
 
 }
 
-//Detecta si se está ingresando desde alguno de estos dispositivos
+ //Detecta si se está ingresando desde alguno de estos dispositivos
 function detectMob() {
     const toMatch = [
         /Android/i,
@@ -81,11 +81,11 @@ function printing() {
 //function que cambia el contenido del boton
 function buttonText() {
     var button = document.getElementById("defaultOpen");
-    var allTheButtons = document.getElementById('social-link').childElementCount;
-    var romanNumbers = ["0", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XX-2"];
+    var allTheButtons = document.getElementById('social-link').childElementCount; //Acomodar el id del div para que sea bloques
+    var monthNumbers = ["1°", "2°", "3°", "4°", "5°", "6°"];
 
     for (let i = 0; i < allTheButtons; i++) {
-        button.innerHTML = romanNumbers[i];
+        button.innerHTML = monthNumbers[i];
         button = button.nextElementSibling;
     }
 }
