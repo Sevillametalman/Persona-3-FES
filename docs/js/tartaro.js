@@ -5,7 +5,6 @@ window.onload = function () {
     var platform = detectMob();
 
     if (platform) {
-        buttonText();
         document.getElementById('P3F-logo').style.width = '75%'
         document.getElementById('open-menu').style.fontSize = '37px'
     }
@@ -81,7 +80,7 @@ function printing() {
 }
 
 //function que cambia el contenido del boton
-function buttonText() {
+/*function buttonText() {
     var button = document.getElementById("defaultOpen");
     var allTheButtons = document.getElementById('social-link').childElementCount; //Acomodar el id del div para que sea bloques
     var monthNumbers = ["1°", "2°", "3°", "4°", "5°", "6°"];
@@ -90,4 +89,4 @@ function buttonText() {
         button.innerHTML = monthNumbers[i];
         button = button.nextElementSibling;
     }
-}
+}*/
