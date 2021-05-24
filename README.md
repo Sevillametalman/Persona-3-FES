@@ -14,3 +14,6 @@ La guía contiene 4 secciones:
 
 ## Edit (2021/05/21)
 Por lo visto hay una forma de llevar al máximo todos los social links y los stats en una partida (sin ng+), intentaré hacerlo en P3 y FES para posteriormente añadir esa sección. Pero primero terminaré todas las secciones y mi primer run del juego (Actualmente voy comenzando noviembre en FES)
+
+## Edit (24/05/21)
+Para el próximo proyecto procuraré hacer las cosas responsive desde el principio

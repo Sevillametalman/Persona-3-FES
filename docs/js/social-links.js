@@ -1,15 +1,28 @@
 //Comienzo del desmadre
 
+//Detecta si estás en tlf o pc
+window.onload = function(){
+    console.log(detectMob())
+}
+
 //Abrir el navbar lateral
-function openNavBar() {
-    document.getElementById("navbar").style.width = "250px"
-    document.getElementById("main").style.marginLeft = "250px";
+function openNavBarSelection() {
+    var x = detectMob();
+    if (!x) {
+        document.getElementById("navbar").style.width = "250px"
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById('open-menu').style.display = 'none';
+    }else if(x){
+        document.getElementById("navbar").style.width = "250px"
+        document.getElementById('open-menu').style.display = 'none';
+    }
 }
 
 //Cerrar el navbar lateral
 function closeNavBar() {
     document.getElementById("navbar").style.width = "0"
     document.getElementById("main").style.marginLeft = "0";
+    document.getElementById('open-menu').style.display = '';
 }
 
 //Mostrar el contenido del mes/social link/piso del tartaro correspondiente
@@ -17,7 +30,7 @@ function showSocLinkContent(event, socialLink) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
-    
+
 
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("slContent");
@@ -37,4 +50,37 @@ function showSocLinkContent(event, socialLink) {
 
     document.getElementById(socialLink).scrollTop = 0; //Ir al top del div de cada social link
 
+}
+
+//Detecta si se está ingresando desde alguno de estos dispositivos
+function detectMob() {
+    const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i
+    ];
+
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+}
+
+//Hace print en consola (true/false) de la respuesta de la función anterior
+function printing() {
+    console.log(detectMob());
+}
+
+//function que cambia el contenido del boton
+function buttonText() {
+    var x = document.getElementById("defaultOpen");
+
+
+    for (let i = 0; i < 22; i++) {
+        x.innerHTML = "X"
+        x = x.nextElementSibling;
+    }
 }
