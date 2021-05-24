@@ -2,7 +2,13 @@
 
 //Detecta si estás en tlf o pc
 window.onload = function(){
-    console.log(detectMob())
+    var platform = detectMob();
+
+    if (platform) {
+        buttonText();
+        document.getElementById('P3F-logo').style.width = '75%'
+        document.getElementById('open-menu').style.fontSize = '37px'
+    }
 }
 
 //Abrir el navbar lateral
