@@ -85,7 +85,7 @@ h1.title {
     color:rgb(0,0,0);
 }
 
-.social-link {
+.bloque {
     box-sizing: border-box;
     float: left;
     border: 10px solid rgb(11, 11, 70);
@@ -100,14 +100,14 @@ h1.title {
     overflow-y: scroll;
 }
 
-.social-link::-webkit-scrollbar {
+.bloque::-webkit-scrollbar {
     display: none;
 }
 
-.social-link button {
+.bloque button {
     box-sizing: border-box;
     display: block;
-    padding: 22px 16px;
+    padding: 32px 16px;
     width: 100%;
     border: none;
     outline: none;
@@ -119,17 +119,17 @@ h1.title {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.social-link button:hover {
+.bloque button:hover {
     color:whitesmoke;
     background-color: rgba(196, 0, 0, 0.5);
 }
 
-.social-link button.active {
+.bloque button.active {
     font-weight: bold;
     background-color: rgba(196, 0, 0, 0.9);
 }
 
-.slContent {
+.blockContent {
     box-sizing: border-box;
     float: left;
     padding: 0px 12px;
@@ -146,11 +146,21 @@ h1.title {
     background-color: rgb(70, 70, 206, 0.9);
 }
 
-.slContent::-webkit-scrollbar {
+.blockContent::-webkit-scrollbar {
     display: none;
 }
 
 .hr-smol{
     width: 50%;
     border-color: rgba(196, 0, 0, 0.9);
+}
+
+.hr-boss{
+    width: 100%; 
+    border-color: rgba(196, 0, 0, 0.9)
+}
+
+.boss-spec{
+    list-style-type: none;
+    padding-left: 10px;
 }

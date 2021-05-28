@@ -5,6 +5,7 @@ window.onload = function () {
     var platform = detectMob();
 
     if (platform) {
+        buttonText();
         document.getElementById('P3F-logo').style.width = '75%'
         document.getElementById('open-menu').style.fontSize = '37px'
     }
@@ -31,20 +32,20 @@ function closeNavBar() {
 }
 
 //Mostrar el contenido del mes/social link/piso del tartaro correspondiente
-function showMesContent(event, cityName) {
+function showBlockContent(event, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
     
 
     // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("mescontent");
+    tabcontent = document.getElementsByClassName("blockContent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
     // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("mestab");
+    tablinks = document.getElementsByClassName("bloquetab");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace("active", "");
     }
@@ -80,13 +81,13 @@ function printing() {
 }
 
 //function que cambia el contenido del boton
-/*function buttonText() {
+function buttonText() {
     var button = document.getElementById("defaultOpen");
-    var allTheButtons = document.getElementById('social-link').childElementCount; //Acomodar el id del div para que sea bloques
+    var allTheButtons = document.getElementById('bloque').childElementCount; //Acomodar el id del div para que sea bloques
     var monthNumbers = ["1°", "2°", "3°", "4°", "5°", "6°"];
 
     for (let i = 0; i < allTheButtons; i++) {
         button.innerHTML = monthNumbers[i];
         button = button.nextElementSibling;
     }
-}*/
+}

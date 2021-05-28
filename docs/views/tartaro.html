@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,8 +8,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" type="text/css" href="../css/tartaro.css" />
     <link rel="icon" href="../img/navbarlogo.png" />
-    <script src="../js/index.js"></script>
+    <script src="../js/tartaro.js"></script>
 </head>
+
 <body>
     <div id="navbar" class="navbar">
         <a class="close" onclick="closeNavBar()">&times;</a>
@@ -29,6 +31,98 @@
             </div>
             <h1 class="title">Guardianes del Tartaro</h1>
         </div>
+
+        <div class="bloque" id="bloque">
+            <button id="defaultOpen" class="bloquetab" onclick="showBlockContent(event, 'Thebel')">Thebel</button>
+            <button class="bloquetab" onclick="showBlockContent(event, 'Arqa')">Arqa</button>
+            <button class="bloquetab" onclick="showBlockContent(event, 'Yabbashah')">Yabbashah</button>
+            <button class="bloquetab" onclick="showBlockContent(event, 'Tziah')">Tziah</button>
+            <button class="bloquetab" onclick="showBlockContent(event, 'Harabah')">Harabah</button>
+            <button class="bloquetab" onclick="showBlockContent(event, 'Adamah')">Adamah</button>
+        </div>
+        <div id="Thebel" class="blockContent">
+
+            <hr class="hr-boss">
+            <h3 style="text-align: center;">Piso 5</h3>
+            <ul class="boss-spec">
+                <li><strong>Nombre: </strong>Venus Eagle (x3)</li>
+                <li><strong>Arcana: </strong>Empress</li>
+                <li><strong>Drena: </strong>Fire</li>
+                <li><strong>Anula: </strong>Wind/Light/Dark</li>
+                <li><strong>Debilidad: </strong>Pierce</li>
+                <li><strong>Nivel Recomendado: </strong>4</li>
+            </ul>
+            <p>Siempre que hayas encontrado/comprado un arco antes de la batalla y que el protagonista lo haya equipado
+                antes de la batalla, esto debería ser fácil. Ya que son débiles a la perforación derríbalos con tu arco
+                y luego haz un All-Out Attack. El único problema que puedes tener es si deciden atacar a Junpei con sus
+                Garu, pero la batalla debería ser lo suficientemente corta como para que esto no sea un problema.
+            </p>
+
+            <hr class="hr-boss">
+            <h3 style="text-align: center;">Piso 10</h3>
+            <ul class="boss-spec">
+                <li><strong>Nombre: </strong>Dancing Hand (x3)</li>
+                <li><strong>Arcana: </strong>Magician</li>
+                <li><strong>Anula: </strong>Light/Dark</li>
+                <li><strong>Resiste: </strong>Elements</li>
+                <li><strong>Debilidad: </strong>Strike</li>
+                <li><strong>Nivel Recomendado: </strong>5</li>
+            </ul>
+            <p>Ojalá hayas encontrado una Apsaras en tus recorridos hasta ahora para que puedas usar la combinación de
+                Cadenza (Orpheus + Apsaras) ya que será invaluable en esta lucha. Estos tipos pueden ser un problema, ya
+                que pueden usar todo tipo de elemento contra ti y su magia hace una gran cantidad de daño. Si los tres
+                usan Magaru en el mismo turno probablemente morirás (y Junpei definitivamente morirá).
+            </p>
+
+            <hr class="hr-boss">
+            <h3 style="text-align: center;">Piso 10</h3>
+            <ul class="boss-spec">
+                <li><strong>Nombre: </strong>Rampage Drive</li>
+                <li><strong>Arcana: </strong>Chariot</li>
+                <li><strong>Repele: </strong>Strike</li>
+                <li><strong>Anula: </strong>Slash/Pierce/Light/Dark</li>
+                <li><strong>Resiste: </strong>Fire</li>
+                <li><strong>Nivel Recomendado: </strong>6</li>
+            </ul>
+            <p>Esta puede ser una batalla realmente difícil, ya que no sólo es inmune a todo tipo de ataques físicos,
+                sino que además no tiene ninguna debilidad que puedas explotar. Si a esto le añadimos que su Assault
+                Dive, puede matarte en de un solo golpe y este será tu mayor desafío.
+            </p>
+
+            <p>En cuanto a la Persona querrás un Ara Mitama, (puedes adquirir uno fusionando Pixie y Angel) ya que te
+                ayudará a protegerte de su Assault Dive. Por desgracia, la capacidad ofensiva de Ara Mitama deja mucho
+                que desear (las únicas habilidades ofensivas que aprende de forma natural son Bash, que repele, y Agi, a
+                la que es resistente), así que quizás quieras arriesgarte a cambiar a Apsaras o algo con magia elemental
+                a la que Rampage Drive no es no sea resistente.
+            </p>
+
+            <p>Esta batalla es realmente una guerra de golpes, usa la combinación de Cadenza para curación, pon la
+                táctica de Yukari en Heal/Support si lo necesitas, golpéalo con tu mejor magia y espera que no te mate
+                de un solo golpe.
+            </p>
+
+            <p>Una última cosa, espero que tengas a mano algunas Revival Beads, ya que las necesitarás</p>
+
+        </div>
+        <div id="Arqa" class="blockContent">
+
+        </div>
+        <div id="Yabbashah" class="blockContent">
+
+        </div>
+        <div id="Tziah" class="blockContent">
+
+        </div>
+        <div id="Harabah" class="blockContent">
+
+        </div>
+        <div id="Adamah" class="blockContent">
+
+        </div>
     </div>
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
+
 </html>
