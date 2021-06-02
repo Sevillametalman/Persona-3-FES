@@ -6,8 +6,9 @@ window.onload = function () {
 
     if (platform) {
         buttonText();
-        document.getElementById('P3F-logo').style.width = '75%'
-        document.getElementById('open-menu').style.fontSize = '37px'
+        //document.getElementById('P3F-logo').style.width = '75%'
+        //document.getElementById('open-menu').style.fontSize = '37px'
+        document.getElementById('navbar').style.textAlign = 'center';
     }
 }
 
@@ -19,7 +20,7 @@ function openNavBarSelection() {
         document.getElementById("main").style.marginLeft = "250px";
         document.getElementById('open-menu').style.display = 'none';
     }else if(x){
-        document.getElementById("navbar").style.width = "250px"
+        document.getElementById("navbar").style.width = "100%"
         document.getElementById('open-menu').style.display = 'none';
     }
 }

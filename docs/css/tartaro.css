@@ -164,3 +164,18 @@ h1.title {
     list-style-type: none;
     padding-left: 10px;
 }
+
+@media screen and (max-width: 600px){
+    body{
+        padding: 0;
+    }
+
+    #P3F-logo{
+        width: 75%;
+    }
+
+    .open-menu{
+        font-size: 37px;
+    }
+    
+}
