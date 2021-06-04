@@ -101,7 +101,7 @@ function buttonText() {
 //funcion que cambia el contenido del boton
 function buttonTextLarge(){
     var button = document.getElementById("defaultOpen");
-    var allTheButtons = document.getElementById('bloque').childElementCount; //Acomodar el id del div para que sea bloques
+    var allTheButtons = document.getElementById('mes').childElementCount; //Acomodar el id del div para que sea bloques
     var monthNumbers = ["Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre", "Enero"];
 
     for (let i = 0; i < allTheButtons; i++) {
