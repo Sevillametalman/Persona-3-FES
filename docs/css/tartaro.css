@@ -166,10 +166,7 @@ h1.title {
 }
 
 @media screen and (max-width: 600px){
-    body{
-        padding: 0;
-    }
-
+    /*Para telefonos*/
     #P3F-logo{
         width: 75%;
     }

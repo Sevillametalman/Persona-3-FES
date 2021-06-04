@@ -108,3 +108,15 @@ h1.title {
     border-color: rgb(0, 0, 0);
 }
 
+@media screen and (max-width: 600px){
+    /*Para telefonos*/
+    #P3F-logo{
+        width: 75%;
+    }
+
+    .open-menu{
+        font-size: 37px;
+    }
+    
+}
+

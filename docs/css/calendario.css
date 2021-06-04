@@ -163,4 +163,15 @@ h1.title {
     padding-left: 10px;
 }
 
+@media screen and (max-width: 600px){
+    /*Para telefonos*/
+    #P3F-logo{
+        width: 75%;
+    }
+
+    .open-menu{
+        font-size: 37px;
+    }
+    
+}
 

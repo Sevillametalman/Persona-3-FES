@@ -1,7 +1,8 @@
 //Comienzo del desmadre
 
-//Detecta si estás en tlf o pc
+
 window.onload = function () {
+    //Detecta si estás en tlf o pc
     var platform = detectMob();
 
     if (platform) {
@@ -10,6 +11,10 @@ window.onload = function () {
         //document.getElementById('open-menu').style.fontSize = '37px'
         document.getElementById('navbar').style.textAlign = 'center';
     }
+
+    //Parte de la funcion responsive checkedMediaQuery
+    //Cada vez que se ajuste el tamaño, hará lo que la funcion chequedMediaQuery indica
+    window.addEventListener('resize', checkMediaQuery);
 }
 
 //Abrir el navbar lateral
@@ -90,5 +95,27 @@ function buttonText() {
     for (let i = 0; i < allTheButtons; i++) {
         button.innerHTML = monthNumbers[i];
         button = button.nextElementSibling;
+    }
+}
+
+//funcion que cambia el contenido del boton
+function buttonTextLarge(){
+    var button = document.getElementById("defaultOpen");
+    var allTheButtons = document.getElementById('bloque').childElementCount; //Acomodar el id del div para que sea bloques
+    var monthNumbers = ["Thebel", "Arqa", "Yabbashah", "Tziah", "Harabah", "Adamah"];
+
+    for (let i = 0; i < allTheButtons; i++) {
+        button.innerHTML = monthNumbers[i];
+        button = button.nextElementSibling;
+    }
+}
+
+//Funcion que ajusta el contenido de los botones dependiendo del width de la ventana
+function checkMediaQuery() {
+    // Si el innerWidth de la ventana es menor que 600px
+    if (window.innerWidth < 600) {
+        buttonText()
+    } else { 
+        buttonTextLarge()
     }
 }

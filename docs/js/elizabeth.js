@@ -18,7 +18,7 @@ function openNavBarSelection() {
         document.getElementById("main").style.marginLeft = "250px";
         document.getElementById('open-menu').style.display = 'none';
     }else if(x){
-        document.getElementById("navbar").style.width = "250px"
+        document.getElementById("navbar").style.width = "100%"
         document.getElementById('open-menu').style.display = 'none';
     }
 }
