@@ -1,6 +1,12 @@
-//Comienzo del desmadre
+/**
+ * @module index/listReport
+ * @author SevMetMan
+ */
 
-//Detecta si estás en tlf o pc
+/**
+ * @function window.onload
+ * @description Detecta si estás en tlf o pc
+ */
 window.onload = function(){
     var platform = detectMob();
 
@@ -10,7 +16,10 @@ window.onload = function(){
     }
 }
 
-//Abrir el navbar lateral
+/**
+ * @function openNavBarSelection
+ * @description Función para abrir el NavBar lateral
+ */
 function openNavBarSelection() {
     var x = detectMob();
     if (!x) {
@@ -23,14 +32,20 @@ function openNavBarSelection() {
     }
 }
 
-//Cerrar el navbar lateral
+/**
+ * @function closeNavBar
+ * @description Función para cerrar el NavBar
+ */
 function closeNavBar() {
     document.getElementById("navbar").style.width = "0"
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById('open-menu').style.display = '';
 }
 
-//Mostrar el contenido del mes/social link/piso del tartaro correspondiente
+/**
+ * @function showMesContent
+ * @description Mostrar el contenido del mes/social link/piso del tartaro correspondiente
+ */
 function showMesContent(event, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -57,7 +72,11 @@ function showMesContent(event, cityName) {
 
 }
 
- //Detecta si se está ingresando desde alguno de estos dispositivos
+/**
+ * @function detectMob
+ * @description Detecta si se está ingresando desde alguno de estos dispositivos
+ * @returns {boolean} True si estás desde uno de los dispositivos. False caso contrario
+ */
 function detectMob() {
     const toMatch = [
         /Android/i,
@@ -74,7 +93,10 @@ function detectMob() {
     });
 }
 
-//Hace print en consola (true/false) de la respuesta de la función anterior
+/**
+ * @function printing
+ * @description Hace print de detectMob
+ */
 function printing() {
     console.log(detectMob());
 }

@@ -1,6 +1,12 @@
-//Comienzo del desmadre
+/**
+ * @module social-links
+ * @author SevMetMan
+ */
 
-//Detecta si estás en tlf o pc
+/**
+ * @function window.onload
+ * @description Detecta si estás en tlf o pc
+ */
 window.onload = function () {
     //Detecta si estás en tlf o pc
     var platform = detectMob();
@@ -17,7 +23,10 @@ window.onload = function () {
     window.addEventListener('resize', checkMediaQuery);
 }
 
-//Abrir el navbar lateral
+/**
+ * @function openNavBarSelection
+ * @description Función para abrir el NavBar lateral
+ */
 function openNavBarSelection() {
     var x = detectMob();
     if (!x) {
@@ -30,14 +39,20 @@ function openNavBarSelection() {
     }
 }
 
-//Cerrar el navbar lateral
+/**
+ * @function closeNavBar
+ * @description Función para cerrar el NavBar
+ */
 function closeNavBar() {
     document.getElementById("navbar").style.width = "0"
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById('open-menu').style.display = '';
 }
 
-//Mostrar el contenido del mes/social link/piso del tartaro correspondiente
+/**
+ * @function showSocLinkContent
+ * @description Mostrar el contenido del mes/social link/piso del tartaro correspondiente
+ */
 function showSocLinkContent(event, socialLink) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -64,7 +79,11 @@ function showSocLinkContent(event, socialLink) {
 
 }
 
-//Detecta si se está ingresando desde alguno de estos dispositivos
+/**
+ * @function detectMob
+ * @description Detecta si se está ingresando desde alguno de estos dispositivos
+ * @returns {boolean} True si estás desde uno de los dispositivos. False caso contrario
+ */
 function detectMob() {
     const toMatch = [
         /Android/i,
@@ -81,12 +100,18 @@ function detectMob() {
     });
 }
 
-//Hace print en consola (true/false) de la respuesta de la función anterior
+/**
+ * @function printing
+ * @description Hace print de detectMob
+ */
 function printing() {
     console.log(detectMob());
 }
 
-//function que cambia el contenido del boton
+/**
+ * @function buttonText
+ * @description Intercambia de títulos a números romanos dependiendo del tamaño de la ventana
+ */
 function buttonText() {
     var button = document.getElementById("defaultOpen");
     var allTheButtons = document.getElementById('social-link').childElementCount;
@@ -98,7 +123,11 @@ function buttonText() {
     }
 }
 
-function buttonTextLarge(){
+/**
+ * @function buttonTextLarge
+ * @description Intercambia de números romanos a títulos dependiendo del tamaño de la ventana
+ */
+function buttonTextLarge() {
     var button = document.getElementById("defaultOpen");
     var allTheButtons = document.getElementById('social-link').childElementCount;
     var romanNumbers = ["Fool", "Magician", "Priestess", "Empress", "Emperor", "Hierophant", "Lovers", "Chariot", "Justice", "Hermit", "Fortune", "Strength", "Hanged Man", "Death", "Temperance", "Devil", "Tower", "Star", "Moon", "Sun", "Judgment", "Aeon"];
@@ -109,12 +138,15 @@ function buttonTextLarge(){
     }
 }
 
-//Funcion que ajusta el contenido de los botones dependiendo del width de la ventana
+/**
+ * @function checkMediaQuery
+ * @description Funcion que ajusta el contenido de los botones dependiendo del width de la ventana
+ */
 function checkMediaQuery() {
     // Si el innerWidth de la ventana es menor que 600px
     if (window.innerWidth < 600) {
         buttonText()
-    } else { 
+    } else {
         buttonTextLarge()
     }
 }
